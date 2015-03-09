@@ -1,0 +1,38 @@
+@import "../bower_components/boostrap-sass/assets/stylesheets/bootstrap";
+
+$contentAccentColor: #34738C;
+$sideBarColorDark : #402318;
+$sideBarFontSize: 14px;
+
+@media all and (max-width: 480px) { $sideBarFontSize: 20px;}                        
+@media all and (max-width: 767px) { $sideBarFontSize: 20px;}                         
+@media all and (min-width: 768px) and (max-width: 979px) { $sideBarFontSize: 25px;}  
+@media all and (min-width: 1200px) { $sideBarFontSize: 30px;}                        
+
+.body{
+	padding: 0em;
+	margin: 0em;
+}
+.header{
+ font-size: $sideBarFontSize * 3;
+ color:
+    darken($contentAccentColor, 10%);
+}
+
+.selection{
+	font-size: $sideBarFontSize;
+  color: complement($contentAccentColor);
+	margin-top: $sideBarFontSize/2;
+	margin-bottom: $sideBarFontSize/2;
+}
+.video {
+  border-color: $contentAccentColor;
+  border-top: solid;
+  border-bottom: solid;
+  display: inline;
+  color:  $contentAccentColor;
+  
+}
+
+
+
